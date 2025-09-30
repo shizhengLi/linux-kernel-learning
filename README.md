@@ -31,10 +31,10 @@ linux-kernel-learning/
 **目标**：建立Linux内核的整体认知
 
 **核心内容**：
-- [内核架构设计](phase1-system-architecture/01-kernel-architecture/) - 宏内核架构、设计理念
-- [构建系统](phase1-system-architecture/02-build-system/) - 编译过程、配置系统
-- [源代码结构](phase1-system-architecture/03-source-structure/) - 目录组织、代码结构
-- [设计模式](phase1-system-architecture/04-design-patterns/) - 内核设计模式分析
+- [内核架构设计](./phase1-system-architecture/kernel-architecture-analysis.md) - 宏内核架构、设计理念
+- [构建系统](./phase1-system-architecture/linux-build-system.md) - 编译过程、配置系统
+- [源代码结构](./phase1-system-architecture/linux-source-analysis.md) - 目录组织、代码结构
+- [设计模式](./phase1-system-architecture/linux-kernel-design-patterns.md) - 内核设计模式分析
 
 **学习成果**：
 - 理解宏内核架构的设计原理
@@ -45,10 +45,10 @@ linux-kernel-learning/
 **目标**：深入理解内核核心功能
 
 **核心内容**：
-- [进程管理](phase2-core-subsystems/01-process-management/) - 调度器、进程生命周期
-- [内存管理](phase2-core-subsystems/02-memory-management/) - 虚拟内存、物理页管理
-- [文件系统](phase2-core-subsystems/03-filesystems/) - VFS层、EXT4实现
-- [设备驱动](phase2-core-subsystems/04-device-drivers/) - 设备模型、驱动框架
+- [进程管理](./phase2-core-subsystems/process-management-deep-dive.md) - 调度器、进程生命周期
+- [内存管理](./phase2-core-subsystems/memory-management-deep-dive.md) - 虚拟内存、物理页管理
+- [文件系统](./phase2-core-subsystems/filesystem-deep-dive.md) - VFS层、EXT4实现
+- [设备驱动](./phase2-core-subsystems/device-drivers-deep-dive.md) - 设备模型、驱动框架
 
 **关键技术**：
 - CFS调度算法、进程状态转换
@@ -60,10 +60,10 @@ linux-kernel-learning/
 **目标**：掌握高级特性和接口
 
 **核心内容**：
-- [网络子系统](phase3-advanced-subsystems/01-network-subsystem/) - 协议栈、Socket接口
-- [系统调用](phase3-advanced-subsystems/02-system-calls/) - 系统调用机制、实现原理
-- [安全子系统](phase3-advanced-subsystems/03-security-subsystem/) - LSM、SELinux
-- [虚拟化](phase3-advanced-subsystems/04-virtualization/) - KVM、容器技术
+- [网络子系统](./phase3-advanced-subsystems/network-subsystem-deep-dive.md) - 协议栈、Socket接口
+- [系统调用](./phase3-advanced-subsystems/system-calls-deep-dive.md) - 系统调用机制、实现原理
+- [安全子系统](./phase3-advanced-subsystems/security-subsystem-deep-dive.md) - LSM、SELinux
+- [虚拟化](./phase3-advanced-subsystems/virtualization-deep-dive.md) - KVM、容器技术
 
 **核心特性**：
 - TCP/IP协议栈、NAPI机制
@@ -75,10 +75,10 @@ linux-kernel-learning/
 **目标**：深度掌握网络子系统的实现和优化
 
 **核心内容**：
-- [网络架构设计](phase4-network-subsystem/network-subsystem-deep-dive.md) - 分层架构、协议实现
-- [性能优化技术](phase4-network-subsystem/network-subsystem-deep-dive.md) - NAPI、GRO、XDP
-- [网络驱动开发](phase4-network-subsystem/network-subsystem-deep-dive.md) - 驱动框架、实例分析
-- [eBPF网络编程](phase4-network-subsystem/network-subsystem-deep-dive.md) - 包过滤、程序开发
+- [网络架构设计](./phase4-network-subsystem/network-architecture-design.md) - 分层架构、协议实现
+- [性能优化技术](./phase4-network-subsystem/performance-optimization.md) - NAPI、GRO、XDP
+- [网络驱动开发](./phase4-network-subsystem/network-driver-development.md) - 驱动框架、实例分析
+- [eBPF网络编程](./phase4-network-subsystem/ebpf-network-programming.md) - 包过滤、程序开发
 
 **技术亮点**：
 - 高性能网络实现
@@ -90,10 +90,10 @@ linux-kernel-learning/
 **目标**：理解架构相关代码和底层实现
 
 **核心内容**：
-- [x86_64架构特性](phase5-x86_64-architecture/phase5-x86_64-architecture-research-report.md) - 64位模式、寄存器
-- [启动过程](phase5-x86_64-architecture/phase5-x86_64-architecture-research-report.md) - 引导、实模式到保护模式
-- [内存管理](phase5-x86_64-architecture/phase5-x86_64-architecture-research-report.md) - 分页机制、地址转换
-- [中断处理](phase5-x86_64-architecture/phase5-x86_64-architecture-research-report.md) - IDT、异常处理
+- [x86_64架构特性](./phase5-x86_64-architecture/x86_64-architecture-features.md) - 64位模式、寄存器
+- [启动过程](./phase5-x86_64-architecture/boot-process-analysis.md) - 引导、实模式到保护模式
+- [内存管理](./phase5-x86_64-architecture/memory-management.md) - 分页机制、地址转换
+- [中断处理](./phase5-x86_64-architecture/interrupt-handling.md) - IDT、异常处理
 
 **架构特性**：
 - 64位寻址空间
@@ -105,10 +105,10 @@ linux-kernel-learning/
 **目标**：掌握内核调试和性能优化技术
 
 **核心内容**：
-- [内核调试技术](phase6-debugging-performance/phase6-debugging-performance-analysis-research-report.md) - printk、KGDB、ftrace
-- [性能分析工具](phase6-debugging-performance/phase6-debugging-performance-analysis-research-report.md) - perf、eBPF、火焰图
-- [内存泄漏检测](phase6-debugging-performance/phase6-debugging-performance-analysis-research-report.md) - KASAN、kmemleak
-- [性能优化策略](phase6-debugging-performance/phase6-debugging-performance-analysis-research-report.md) - 调度优化、内存优化
+- [内核调试技术](./phase6-debugging-performance/performance-analysis-tools.md) - printk、KGDB、ftrace
+- [性能分析工具](./phase6-debugging-performance/performance-analysis-tools.md) - perf、eBPF、火焰图
+- [内存泄漏检测](./phase6-debugging-performance/memory-leak-detection.md) - KASAN、kmemleak
+- [性能优化策略](./phase6-debugging-performance/performance-optimization-strategies.md) - 调度优化、内存优化
 
 **实践技能**：
 - 内核调试环境搭建
